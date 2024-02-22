@@ -1,0 +1,187 @@
+body {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e83434;
+  text-align: center;
+  margin-bottom: 20px; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 50px; 
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  height: 100vh; 
+}
+
+.file-input {
+  display: none; 
+}
+
+.custom-file-input {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  transition: background-color 0.3s;
+  outline: none; 
+  position: absolute;
+  bottom: 80px;
+  left: 70px;
+}
+
+.custom-file-input:hover {
+  background-color: #45a049; 
+}
+
+.center-content {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.music-icon {
+  max-width: 100%;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  right: 100px;
+  top: -80px; 
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2196F3;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -50px;
+  left: -10px;
+}
+
+.main-audio {
+  flex: 1; 
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  left: 500px;
+}
+
+.song-list {
+  overflow-y: auto; 
+  height:fit-content; 
+  width: 300px; 
+  background-color: #f0f0f0;
+  padding: 10px; 
+}
+
+.song-item {
+  cursor: pointer;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: border-color 0.3s ease;
+  background-color: #F1B8D4;
+  overflow: hidden;
+  color: #EE1781;
+}
+
+.song-item:hover {
+  border-color: #ccc;
+  background-color: #EAA1C4;
+}
+
+.song-item.active {
+  background-color: #C76C75;
+}
+
+.song-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  overflow: hidden;  
+}
+
+@media (max-width: 601px) {
+  h1 {
+    font-size: 28px; 
+    margin-bottom: 20px;
+    margin-left: 50px; 
+  }
+
+  .app-container {
+    flex-direction: row; 
+    align-items: flex-start; 
+  }
+
+  .custom-file-input {
+    bottom: 80px; 
+    left: 70px; 
+  }
+  img.music-icon{
+    display: none;
+  }
+  h2 {
+    font-size: 24px; 
+    top: -50px; 
+    left: -10px; 
+  }
+
+  .main-audio {
+    bottom: 150px; 
+    left: 0px;
+    width: 50px !important;
+    
+  }
+  .song-list {
+    overflow-y: auto; 
+    height:fit-content; 
+    width: 100px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+  }
+  
+  .song-item {
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: border-color 0.3s ease;
+    background-color: #F1B8D4;
+    overflow: hidden;
+    color: #EE1781;
+  }
+  
+  .song-item:hover {
+    border-color: #ccc;
+    background-color: #EAA1C4;
+  }
+  
+  .song-item.active {
+    background-color: #C76C75;
+  }
+  
+  .song-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    overflow: hidden; 
+  }
+}
